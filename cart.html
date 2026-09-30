@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        ShopEase | Cart
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        ShopEase
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="cart.html">
+            Cart
+        </a>
+
+        <a href="orders.html">
+            Orders
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+    <section class="page-header">
+
+        <h1>
+            Your Cart
+        </h1>
+
+    </section>
+
+
+
+    <section
+        id="cart-container"
+        class="cart-container"
+    >
+
+        <p>
+            Loading cart...
+        </p>
+
+    </section>
+
+
+
+    <section class="cart-summary">
+
+        <h2>
+
+            Total:
+
+            <span id="cart-total">
+                ₹0.00
+            </span>
+
+        </h2>
+
+
+        <button
+            class="btn"
+            onclick="placeOrder()"
+        >
+            Place Order
+        </button>
+
+    </section>
+
+</main>
+
+
+
+<script src="js/api.js"></script>
+
+<script src="js/cart.js"></script>
+
+
+<script>
+
+    loadCart();
+
+</script>
+
+
+</body>
+
+</html>

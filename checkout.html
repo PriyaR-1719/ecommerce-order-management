@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        ShopEase | Checkout
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        ShopEase
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="cart.html">
+            Cart
+        </a>
+
+        <a href="orders.html">
+            Orders
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main class="form-page">
+
+
+    <div class="form-card">
+
+        <h1>
+            Checkout
+        </h1>
+
+
+        <p>
+            Review your cart before
+            placing your order.
+        </p>
+
+
+        <div class="checkout-info">
+
+            <p>
+                Your current cart items
+                will be converted into
+                an order.
+            </p>
+
+        </div>
+
+
+        <button
+            class="btn"
+            onclick="placeOrder()"
+        >
+            Confirm Order
+        </button>
+
+
+        <p id="checkout-message"></p>
+
+    </div>
+
+</main>
+
+
+
+<script src="js/api.js"></script>
+
+<script src="js/cart.js"></script>
+
+
+</body>
+
+</html>
